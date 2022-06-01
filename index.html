@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Vẽ đồ thị hàm số</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+		<!-- <script src="p5.min.js"></script> -->
+		<script src="Token.js"></script>
+		<script src="Node.js"></script>
+		<script src="Queue.js"></script>
+		<script src="Stack.js"></script>
+		<!-- <script src="Tree.js"></script> -->
+		<script src="main.js"></script>
+	</head>
+
+	<body>
+		Nhập vào 1 hay nhiều hàm số cách nhau bởi dấu ;
+		<br />
+		<input
+			id="expressions"
+			value="x ^ 2 - 2; x ^ 3 + 5 * x - 2"
+			style="width: 98%; height: 20px;"
+			title="thí dụ: x ^ 2 - 2; x ^ 3 + 5 * x - 2"
+		/>
+		<br />
+		x1 =
+		<input
+			id="x1"
+			value="-10"
+			style="width: 50px; height: 20px;"
+			title="x có giá trị âm"
+		/>
+		x2 =
+		<span id="x2" style="width: 50px; height: 20px;" title="= -x1">
+			-x1
+		</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y1 =
+		<input
+			id="y1"
+			value="-20"
+			style="width: 50px; height: 20px;"
+			title="y có giá trị âm"
+		/>
+		y2 =
+		<span id="y2" style="width: 50px; height: 20px;" title="= -y1">
+			-y1
+		</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interval (số điểm trong đoạn
+		[x1 - x2]) =
+		<input id="interval" value="10000" style="width: 50px; height: 20px;" />
+		<br />
+		<button onclick="drawAll()">Vẽ đồ thị</button><br />
+	</body>
+</html>
